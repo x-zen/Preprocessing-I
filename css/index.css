@@ -134,3 +134,21 @@ html,
 body {
   height: 100%;
 }
+/*><><><><><><><><><><*/
+/*Variables*/
+/*Mixins*/
+.nav-text {
+  font-size: 70%;
+  color: #51564f;
+  text-decoration: none;
+}
+.container {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+}
+nav a {
+  font-size: 70%;
+  color: #51564f;
+  text-decoration: none;
+}

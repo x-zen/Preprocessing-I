@@ -56,3 +56,28 @@ table {
 html, body {
     height: 100%;
 }
+
+/*><><><><><><><><><><*/
+
+/*Variables*/
+@zen-green: #4ecc14;
+@zen-grey: #51564f;
+
+/*Mixins*/
+.nav-text{
+	font-size: 70%;
+	color: @zen-grey;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 800px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+nav {
+	a {
+		.nav-text()
+	}
+}
