@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,3 +57,142 @@ html, body {
     height: 100%;
 }
 
+/*><><><><><><><><><><*/
+
+/*Variables*/
+@zen-green: #4ecc14;
+@zen-grey: #51564f;
+
+/*Mixins*/
+.nav-text{
+	font-size: 25px;
+	color: @zen-grey;
+	text-decoration: none;
+}
+
+.flex-d {
+	flex-wrap: wrap;
+	text-align: center;
+	margin: 5px auto;
+	padding: 3%;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.head {
+	header{
+		display: inline-block;
+		margin: 0 auto;
+		width: 98%;
+	}
+}
+
+/*Start*/
+img {
+	height: 5rem;
+	width: 5rem;
+}
+
+html {
+	font-size: 62.5%;
+	h1 {
+		font-size: 4.6rem;
+	}
+	h2 {
+		font-size: 4.0rem;
+	}
+	h3 {
+		font-size: 3.6rem;
+	}
+	p {
+		font-size: 2.0rem;
+	}
+}
+
+.container {
+	max-width: 800px;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+nav {
+	.flex-d();
+	justify-content: space-between;
+	a {
+		.nav-text();
+	}
+}
+
+#Home {
+	.flex-d();
+	img {
+		height: 49%;
+		width: 49%;
+		border-radius: 50%;
+	}
+	div {
+		height: 100%;
+		width: 49%;
+	}
+}
+
+#About {
+	.flex-d();
+	.head();
+	.box {
+		border: 2px solid @zen-grey;
+		border-radius: 5px;
+		padding: 2.5%;
+		height: 20rem;
+		width: 49%;
+	}
+}
+
+#Career {
+	.flex-d();
+	.head();
+	.w-box {
+		border: 2px solid @zen-grey;
+		border-radius: 5px;
+		padding: 2.5%;
+		height: 30rem;
+		width: 33%;
+		img {
+			width: 12rem;
+			height: 12rem;
+		}
+	}
+}
+
+#Contact {
+	.flex-d();
+	a {
+		margin: 0 1rem;
+		font-size: 3rem;
+		text-decoration: none;
+		color: @zen-green;
+	}
+}
+
+@media (max-width: 500px){
+	html {
+		font-size: 62.5%;
+		h1 {
+			font-size: 3.2rem;
+		}
+		h2 {
+			font-size: 2.8rem;
+		}
+		h3 {
+			font-size: 2.4rem;
+		}
+		p {
+			font-size: 1.0rem;
+		}
+	}
+	nav {
+		flex-direction: column;
+	}
+}
