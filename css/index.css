@@ -138,17 +138,139 @@ body {
 /*Variables*/
 /*Mixins*/
 .nav-text {
-  font-size: 70%;
+  font-size: 25px;
   color: #51564f;
   text-decoration: none;
+}
+.flex-d {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 5px auto;
+  padding: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.head header {
+  display: inline-block;
+  margin: 0 auto;
+  width: 98%;
+}
+/*Start*/
+img {
+  height: 5rem;
+  width: 5rem;
+}
+html {
+  font-size: 62.5%;
+}
+html h1 {
+  font-size: 4.6rem;
+}
+html h2 {
+  font-size: 4rem;
+}
+html h3 {
+  font-size: 3.6rem;
+}
+html p {
+  font-size: 2rem;
 }
 .container {
   max-width: 800px;
   width: 80%;
   margin: 0 auto;
 }
+nav {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 5px auto;
+  padding: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 nav a {
-  font-size: 70%;
+  font-size: 25px;
   color: #51564f;
   text-decoration: none;
+}
+#Home {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 5px auto;
+  padding: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#Home img {
+  height: 49%;
+  width: 49%;
+  border-radius: 50%;
+}
+#Home div {
+  height: 100%;
+  width: 49%;
+}
+#About {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 5px auto;
+  padding: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#About header {
+  display: inline-block;
+  margin: 0 auto;
+  width: 98%;
+}
+#About .box {
+  border: 2px solid #51564f;
+  border-radius: 5px;
+  padding: 2.5%;
+  height: 20rem;
+  width: 49%;
+}
+#Career {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 5px auto;
+  padding: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#Career header {
+  display: inline-block;
+  margin: 0 auto;
+  width: 98%;
+}
+#Career .w-box {
+  border: 2px solid #51564f;
+  border-radius: 5px;
+  padding: 2.5%;
+  height: 30rem;
+  width: 33%;
+}
+#Career .w-box img {
+  width: 12rem;
+  height: 12rem;
+}
+#Contact {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 5px auto;
+  padding: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#Contact a {
+  margin: 0 1rem;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #4ecc14;
 }
